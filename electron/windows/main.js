@@ -22,7 +22,8 @@ function createMainWindow(councilUiUrl) {
     webPreferences: { 
       nodeIntegration: false, 
       contextIsolation: true,
-      sandbox: true // Security hardening
+      sandbox: true, // Security hardening
+      preload: path.join(__dirname, '..', 'preload.js'),
     },
   });
 
