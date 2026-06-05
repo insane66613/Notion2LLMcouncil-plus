@@ -14,6 +14,7 @@ contextBridge.exposeInMainWorld('notion2CouncilDiagnostics', {
   start: () => ipcRenderer.invoke('diagnostics:start'),
   stop: () => ipcRenderer.invoke('diagnostics:stop'),
   openCouncil: () => ipcRenderer.invoke('diagnostics:openCouncil'),
+  openNotion: () => ipcRenderer.invoke('diagnostics:openNotion'),
   openDocs: () => ipcRenderer.invoke('diagnostics:openDocs'),
   openLogs: () => ipcRenderer.invoke('diagnostics:openLogs'),
 });
